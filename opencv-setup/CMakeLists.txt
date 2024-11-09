@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(MyProject)
+set(OpenCV_DIR "/usr/local/Cellar/opencv/4.10.0_4/lib/cmake/opencv4")
+find_package(OpenCV REQUIRED)
+add_executable(MyProject tutorial.cpp)
+target_link_libraries(MyProject ${OpenCV_LIBS})
